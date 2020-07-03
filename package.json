@@ -1,0 +1,21 @@
+{
+	"name": "fazt-webpack",
+	"version": "1.0.0",
+	"main": "app.js",
+	"license": "MIT",
+	"dependencies": {
+		"webpack": "^4.43.0"
+	},
+	"devDependencies": {
+		"css-loader": "^3.6.0",
+		"html-webpack-plugin": "^4.3.0",
+		"style-loader": "^1.2.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"scripts": {
+		"build": "webpack -p",
+		"dev": "webpack-dev-server -d --open",
+		"start": "yarn build; webpack-dev-server -p --open"
+	}
+}
